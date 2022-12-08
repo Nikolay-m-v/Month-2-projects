@@ -12,8 +12,8 @@ body {
 
 .wrapper {
   margin: 0 auto;
-  padding-top: 20px;
-  width: 1550px;
+  padding-top: 30px;
+  width: 1540px;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -231,4 +231,303 @@ header a {
 
 .download-blithe a:hover {
   background-color: #d98700;
+}
+
+.additional-info {
+  width: 880px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.additional-info h1 {
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+
+.additional-info p {
+  color: #475467;
+}
+
+.nfc-payment {
+  display: flex;
+  padding: 80px 0;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nfc-info {
+  width: 560px;
+}
+
+.nfc-info h1 {
+  font-size: 46px;
+}
+
+.nfc-info h3 {
+  padding: 20px 0;
+  font-weight: 400;
+}
+
+.nfc-info p {
+  color: #475467;
+  padding: 10px 0;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.nfc-info a {
+  color: #fff;
+  padding: 12px 24px;
+  background-color: #6c2bfb;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 17px;
+}
+
+.roadmap {
+  background-image: url("https://www.blithewallet.com/assets/hero-bg.a5dce2b7.jpg");
+  transform: scale(1.235);
+  background-repeat: no-repeat;
+  position: relative;
+  /* display: flex;
+  flex-flow: column;
+  align-items: center; */
+}
+
+.roadmap h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.roadmap-wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.right-side {
+  position: relative;
+  margin-left: 50%;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+.right-side:before {
+  content: "";
+  width: 6px;
+  height: 105%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #6c2bfb;
+}
+
+.line {
+  height: 5px;
+  background-color: #6c2bfb;
+}
+
+.right-side h4,
+.right-side ul {
+  margin: 15px 0 10px 50px;
+}
+
+.roadmap h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.roadmap ul {
+  color: #6c757d;
+  font-size: 18px;
+  padding-left: 20px;
+  line-height: 28px;
+}
+
+.left-side {
+  position: relative;
+  margin-right: 50%;
+  /* text-align: end; */
+}
+
+.left-side:before {
+  content: "";
+  width: 6px;
+  height: 110%;
+  position: absolute;
+  right: -6px;
+  top: 0;
+  background-color: #6c2bfb;
+}
+
+.left-side h4 {
+  margin: 0 15px 10px 60%;
+}
+
+.left-side ul {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.left-side ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-flow: column;
+}
+
+.margin-bottom {
+  margin-bottom: 100px;
+}
+
+.right-side .sun:before {
+  content: "";
+  width: 56px;
+  height: 56px;
+  left: auto;
+  right: 22rem;
+  top: 1rem;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTciIGhlaWdodD0iNTciIHZpZXdCb3g9IjAgMCA1NyA1NyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSByPSIyOCIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgMjguMTMxNyAyOC41Nzc0KSIgZmlsbD0id2hpdGUiLz4KPGNpcmNsZSByPSIxNi4wNDU4IiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAyOC4xMzE3IDI4LjU3NzEpIiBmaWxsPSIjRkY5RjAwIi8+Cjwvc3ZnPgo=");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+}
+
+.left-side .sun:before {
+  content: "";
+  width: 56px;
+  height: 56px;
+  left: auto;
+  right: -2rem;
+  top: 1rem;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTciIGhlaWdodD0iNTciIHZpZXdCb3g9IjAgMCA1NyA1NyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSByPSIyOCIgdHJhbnNmb3JtPSJtYXRyaXgoLTEgMCAwIDEgMjguMTMxNyAyOC41Nzc0KSIgZmlsbD0id2hpdGUiLz4KPGNpcmNsZSByPSIxNi4wNDU4IiB0cmFuc2Zvcm09Im1hdHJpeCgtMSAwIDAgMSAyOC4xMzE3IDI4LjU3NzEpIiBmaWxsPSIjRkY5RjAwIi8+Cjwvc3ZnPgo=");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+}
+
+.team-info {
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+.team-info h1 {
+  color: #6c757d;
+  width: 80px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #ff9f00;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  gap: 50px;
+}
+
+.team-members h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6c757d;
+}
+
+.team-members img {
+  width: 300px;
+  height: 360px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.david {
+  display: flex;
+  flex-flow: column;
+}
+
+.sami {
+  display: flex;
+  flex-flow: column;
+}
+
+.team-members a {
+  align-self: center;
+  padding: 14px 90px;
+  background-color: #ff9f00;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.team-members a:hover {
+  background-color: #ff9d00be;
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+  gap: 25px;
+}
+
+.logo-maxwidth {
+  width: 198px;
+  height: 59px;
+}
+
+.footer-container p {
+  width: 750px;
+  font-size: 25px;
+  text-align: center;
+  color: #6c757d;
+}
+
+.footer-container h1 {
+  font-size: 40px;
+}
+
+.dwn-btns img {
+  margin-left: 10px;
+}
+
+.nav {
+  margin-top: 80px;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 50px;
+}
+
+.nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #121925;
+}
+
+.separator {
+  border-top: 1px solid #121925;
+  opacity: 0.6;
+  transform: scale(1.23);
+  margin: 40px 0;
+}
+
+.copy-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright h4 {
+  color: #6c757d;
+  font-weight: 200;
+  padding: 0 0 35px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 25px;
 }
