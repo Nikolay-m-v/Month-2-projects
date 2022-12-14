@@ -142,6 +142,8 @@ header {
 
 .hero-img {
   width: 100%;
+  /* border radius here is up to preference  */
+  border-radius: 50%;
 }
 
 .reviews {
@@ -185,6 +187,50 @@ header {
   background-color: #fff;
 }
 
+.featured-in {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.featured-in h3 {
+  font-size: 1.6rem;
+}
+
+.container-featured-in {
+  display: flex;
+  width: 120rem;
+  gap: 8rem;
+  margin-top: 1rem;
+}
+
+.tech-crunch-logo {
+  width: 20rem;
+  height: 3rem;
+}
+
+.business-insider-logo {
+  width: 10rem;
+  height: 3rem;
+}
+
+.new-york-times-logo {
+  width: 23rem;
+  height: 3rem;
+}
+
+.forbes-logo {
+  width: 15rem;
+  height: 3rem;
+}
+
+.usa-today-logo {
+  width: 17rem;
+  height: 3rem;
+}
+
 .important-header {
   display: flex;
   flex-flow: column;
@@ -208,7 +254,7 @@ header {
 }
 
 .how-it-works {
-  padding-top: 1rem;
+  padding-top: 8rem;
   display: grid;
   grid-template-rows: 1fr;
   gap: 5rem;
