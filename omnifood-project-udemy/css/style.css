@@ -185,12 +185,37 @@ header {
   background-color: #fff;
 }
 
+.important-header {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 95rem;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.how-it-works-important-header {
+  color: #cf711f;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.three-steps {
+  color: #000;
+  font-size: 3.2rem;
+  margin: 0;
+}
+
 .how-it-works {
   padding-top: 1rem;
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 5rem;
 }
 
 .container {
-  margin-top: 14rem;
+  margin-top: 5rem;
 }
 
 .how-it-works .container {
@@ -205,6 +230,11 @@ header {
 
 .custom {
   margin-left: 61rem;
+}
+
+.customm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .custom-position {
