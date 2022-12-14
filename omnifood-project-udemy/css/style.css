@@ -241,13 +241,13 @@ header {
   padding-top: 5rem;
 }
 
-.how-it-works-important-header {
+.important-heading {
   color: #cf711f;
   font-size: 2rem;
   margin: 1rem 0;
 }
 
-.three-steps {
+.important-info {
   color: #000;
   font-size: 3.2rem;
   margin: 0;
@@ -345,4 +345,42 @@ header {
   height: 240px;
   position: absolute;
   z-index: 2;
+}
+
+.meals {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  background-color: rgb(248, 243, 243);
+}
+
+.meals-container {
+  display: flex;
+  gap: 8rem;
+}
+
+.meal-container {
+  display: flex;
+  flex-flow: column;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+
+.meal-info {
+  padding: 2rem 3rem;
+}
+
+.meals-img {
+  width: 32rem;
+  height: 20rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.calories {
+  background: url("/img/icons/fire.png");
+  width: 2rem;
+  height: 2rem;
 }
