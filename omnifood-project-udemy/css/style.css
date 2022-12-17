@@ -551,8 +551,7 @@ header {
 
 .testimonials-gallery img:hover {
   transform: rotate(10deg);
-  -webkit-transition: background 1s, border-radius 1s;
-  transition: background 1s, border-radius 1s;
+  transition: border-radius 1s, transform 1s;
   cursor: pointer;
   border-radius: 50%;
 }
