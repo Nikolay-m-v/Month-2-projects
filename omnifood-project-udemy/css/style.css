@@ -32,7 +32,7 @@ header {
 }
 
 .logo-img {
-  width: 60px;
+  max-width: 60px;
 }
 
 .logo-navigation-header {
@@ -141,7 +141,7 @@ header {
 }
 
 .hero-img {
-  width: 100%;
+  max-width: 100%;
   /* border radius here is up to preference  */
   border-radius: 50%;
 }
@@ -169,7 +169,7 @@ header {
 }
 
 .customers {
-  width: 50px;
+  max-width: 50px;
   height: 50px;
   border-radius: 50px;
   border: 3px solid #fff;
@@ -201,33 +201,33 @@ header {
 
 .container-featured-in {
   display: flex;
-  width: 120rem;
+  max-width: 120rem;
   gap: 8rem;
   margin-top: 1rem;
 }
 
 .tech-crunch-logo {
-  width: 20rem;
+  max-width: 20rem;
   height: 3rem;
 }
 
 .business-insider-logo {
-  width: 10rem;
+  max-width: 10rem;
   height: 3rem;
 }
 
 .new-york-times-logo {
-  width: 23rem;
+  max-width: 23rem;
   height: 3rem;
 }
 
 .forbes-logo {
-  width: 15rem;
+  max-width: 15rem;
   height: 3rem;
 }
 
 .usa-today-logo {
-  width: 17rem;
+  max-width: 17rem;
   height: 3rem;
 }
 
@@ -236,7 +236,7 @@ header {
   flex-flow: column;
   justify-content: center;
   align-items: flex-start;
-  width: 95rem;
+  max-width: 95rem;
   margin: 0 auto;
   padding-top: 5rem;
 }
@@ -271,7 +271,7 @@ header {
 }
 
 .how-it-works .container img {
-  width: 20rem;
+  max-width: 20rem;
 }
 
 .custom {
@@ -323,7 +323,7 @@ header {
   content: "";
   display: block;
   background-color: #fdf2e9;
-  width: 40rem;
+  max-width: 40rem;
   left: -10rem;
   top: 4rem;
   padding-bottom: 20%;
@@ -337,7 +337,7 @@ header {
   content: "";
   display: block;
   background-color: #fae5d3;
-  width: 30rem;
+  max-width: 30rem;
   left: -5rem;
   top: 8.6rem;
   padding-bottom: 30%;
@@ -395,14 +395,14 @@ header {
 }
 
 .meals-img {
-  width: 32rem;
+  max-width: 32rem;
   height: 20rem;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
 }
 
 .meals-info-icon {
-  width: 17px;
+  max-width: 17px;
   display: inline;
   align-items: center;
   justify-content: center;
@@ -413,7 +413,7 @@ header {
   color: #000;
   font-weight: 700;
   border-radius: 25px;
-  width: 9rem;
+  max-width: 9rem;
   padding: 4px 7px;
 }
 
@@ -442,7 +442,7 @@ header {
   color: #000;
   font-weight: 700;
   border-radius: 25px;
-  width: 5.5rem;
+  max-width: 5.5rem;
   padding: 4px 7px;
 }
 
@@ -451,12 +451,12 @@ header {
   color: #000;
   font-weight: 700;
   border-radius: 25px;
-  width: 5.3rem;
+  max-width: 5.3rem;
   padding: 4px 7px;
 }
 
 .checkmark {
-  width: 18px;
+  max-width: 18px;
 }
 
 .meals-diet h2 {
@@ -551,7 +551,6 @@ header {
 
 .testimonials-gallery img:hover {
   transform: rotate(10deg);
-
   -webkit-transition: background 1s, border-radius 1s;
   transition: background 1s, border-radius 1s;
   cursor: pointer;
@@ -560,4 +559,90 @@ header {
 
 .author-reviews {
   height: 100%;
+}
+
+.pricing {
+  padding: 2rem 0;
+}
+
+.pricing-deal img {
+  max-width: 2.5rem;
+}
+
+.pricing-important {
+  max-width: 120rem;
+  margin: 5rem 23%;
+}
+
+.pricing-important .important-heading {
+  margin: 2rem 0;
+}
+
+.pricing-important .important-info {
+  font-size: 4.6rem;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+}
+
+.pricing-package {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 3px 3px 3px rgb(189, 188, 188);
+  gap: 1rem;
+  background-color: #fdf2e9;
+  max-width: 60rem;
+  padding: 3rem 8rem;
+  border-radius: 10px;
+
+  line-height: 3rem;
+}
+
+.pricing-package:hover {
+  box-shadow: 1px 3px 3px 5px #c08a5b;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.pricing-package-info {
+  color: #cf711f;
+  font-size: 1.8rem;
+}
+
+.pricing-price {
+  color: #333;
+  font-size: 6.5rem;
+  font-family: initial;
+  margin: 0;
+}
+
+.pricing-info {
+  font-size: 1.8rem;
+}
+
+.pricing-deal {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  align-self: flex-start;
+  font-size: 1.8rem;
+}
+
+.btn-cta {
+  color: #fff;
+  padding: 1.5rem 6rem;
+  background-color: #c77e3e;
+  border: none;
+  border-radius: 10px;
+  font-size: 2rem;
+  margin-top: 3rem;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  background-color: #e67e22;
 }
