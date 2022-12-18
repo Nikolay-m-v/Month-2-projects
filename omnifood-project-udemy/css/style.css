@@ -562,6 +562,11 @@ header {
 
 .pricing {
   padding: 2rem 0;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
 }
 
 .pricing-deal img {
@@ -592,14 +597,38 @@ header {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   box-shadow: 1px 3px 3px 3px rgb(189, 188, 188);
   gap: 1rem;
   background-color: #fdf2e9;
   max-width: 60rem;
   padding: 3rem 8rem;
   border-radius: 10px;
-
   line-height: 3rem;
+}
+
+.best-value {
+  overflow: hidden;
+}
+
+.best-value::after {
+  content: "Best value";
+  position: absolute;
+  top: 6%;
+  right: -8%;
+  padding: 0.1rem 4rem;
+  transform: rotate(45deg);
+
+  font-size: 1.3rem;
+  font-weight: 700;
+  height: 3rem;
+  overflow: hidden;
+  text-transform: uppercase;
+  background-color: #ffd43b;
+}
+
+.not-best-value {
+  background-color: #fff;
 }
 
 .pricing-package:hover {
@@ -644,4 +673,43 @@ header {
 
 .btn-cta:hover {
   background-color: #e67e22;
+}
+
+.taxes {
+  font-size: 1.6rem;
+}
+
+.features {
+  padding: 10rem 0;
+}
+
+.features-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.features-wrapper {
+  max-width: 30rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-wrapper img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.features-wrapper h3 {
+  font-size: 2.6rem;
+  color: #000;
+  font-weight: 700;
+}
+
+.features-wrapper p {
+  font-size: 1.6rem;
+  font-weight: 600;
 }
