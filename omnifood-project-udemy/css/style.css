@@ -39,7 +39,8 @@ footer {
 }
 
 .logo-img {
-  max-width: 60px;
+  max-width: 16rem;
+  height: 2.5rem;
 }
 
 .logo-navigation-header {
@@ -54,18 +55,10 @@ footer {
   cursor: pointer;
 }
 
-.logo-fix {
-  font-size: 24px;
-  font-weight: bolder;
-  color: #000;
-  letter-spacing: 0.4rem;
-}
-
 .header-navigation ul {
   display: flex;
-  gap: 5px;
   list-style: none;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .header-navigation a {
@@ -74,6 +67,14 @@ footer {
   font-weight: 600;
   padding: 1rem 2rem;
   border-radius: 8px;
+  font-size: 1.8rem;
+}
+
+.header-navigation a:hover {
+  background-color: #e67e22;
+  color: #fff;
+  opacity: 0.9;
+  transition: ease-in-out 0.3s;
 }
 
 .header-navigation .currently-active {
@@ -84,6 +85,18 @@ footer {
 .section-hero {
   background-color: #fdf2e9;
   padding: 9.6rem 0;
+}
+
+@media (max-width: 1200px) {
+  .section-hero {
+    background-color: orangered;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-hero {
+    border: 20px dashed blue;
+  }
 }
 
 .hero {
@@ -283,7 +296,7 @@ footer {
 .how-it-works .container {
   display: flex;
   justify-content: center;
-  gap: 25rem;
+  gap: 15rem;
 }
 
 .how-it-works .container img {
@@ -291,16 +304,15 @@ footer {
 }
 
 .custom {
-  margin-left: 61rem;
+  margin-left: 25%;
 }
 
-.customm {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.custom {
+  text-align: end;
 }
 
 .custom-position {
-  left: 33rem;
+  left: 15%;
 }
 
 .how-it-works-info {
@@ -339,28 +351,44 @@ footer {
   content: "";
   display: block;
   background-color: #fdf2e9;
-  max-width: 40rem;
-  left: -10rem;
-  top: 4rem;
+  left: -7rem;
+  top: -5rem;
   padding-bottom: 20%;
   border-radius: 50%;
-  height: 330px;
+  width: 40rem;
+  height: 33rem;
   position: absolute;
   z-index: 1;
+  transition: all 1s;
+}
+
+.img-box:hover::before {
+  display: block;
+  transition: all 1s;
+  left: -10rem;
+  top: 4rem;
+}
+
+.img-box:hover::after {
+  display: block;
+  left: -5rem;
+  top: 8.6rem;
+  transition: all 1s;
 }
 
 .img-box::after {
   content: "";
   display: block;
   background-color: #fae5d3;
-  max-width: 30rem;
-  left: -5rem;
+  left: -18rem;
   top: 8.6rem;
   padding-bottom: 30%;
   border-radius: 50%;
-  height: 240px;
+  height: 24rem;
+  width: 30rem;
   position: absolute;
   z-index: 2;
+  transition: all 1s;
 }
 
 .meals {
@@ -911,9 +939,4 @@ footer::before {
   width: 100%;
   position: absolute;
   top: -5%;
-}
-
-.logo:hover {
-  transform: scale(1.3);
-  transition: ease-in-out 0.5s;
 }
