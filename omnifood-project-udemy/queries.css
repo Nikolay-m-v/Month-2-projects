@@ -48,13 +48,150 @@
   .custom {
     max-width: 40rem;
   }
+}
+
+/* Under 944px tablets */
+@media (max-width: 940px) {
+  .footer-container {
+    gap: 0;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img {
+    max-width: 50rem;
+  }
+
+  .how-it-works-info {
+    max-width: 30rem;
+  }
 
   .call-to-action {
-    max-width: 70rem;
+    justify-content: flex-start;
+    justify-content: center;
+  }
+
+  .call-to-action-container {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cta-wrapper {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .call-to-action img {
+    max-width: 64rem;
+    border-radius: 8px;
+  }
+
+  .cta-heading {
+    max-width: 60rem;
+  }
+
+  .cta-text {
+    max-width: 60rem;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-gallery .shown {
+    display: none;
+  }
+
+  .testimonials-gallery img {
+    max-width: 25rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .logo {
+    display: none;
+  }
+
+  .pricing-container {
+    gap: 5rem;
+  }
+
+  .meals-container {
+    flex-flow: column;
+  }
+  .meals .important-info {
+    max-width: 45rem;
+  }
+
+  .container {
+    max-width: 60rem;
+  }
+
+  .custom-position {
+    left: 16%;
+  }
+
+  .custom {
+    margin-left: 50%;
+  }
+
+  .testimonials-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-gallery img {
+    max-width: 20rem;
+  }
+
+  .author-flexbox {
+    flex-flow: column;
+  }
+
+  .testimonials-gallery .hidden-under-certain-width {
+    display: none;
+  }
+
+  .pricing-container {
+    flex-flow: column;
+  }
+
+  .footer-container {
+    flex-flow: column;
+  }
+
+  .footer-important {
+    max-width: 55rem;
+  }
+
+  .footer-important {
+    max-width: 55rem;
   }
 }
 
 /* Below 600px idk what under 600px even supports */
 
-@media (max-width: 38em) {
+@media (max-width: 40em) {
+  .container-featured-in {
+    flex-flow: column;
+    gap: 5rem;
+  }
+
+  .testimonials-gallery .shown {
+    display: block;
+  }
 }

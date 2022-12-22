@@ -14,14 +14,12 @@ li {
   padding: 0;
 }
 
-body {
-}
-
 .page-wrapper {
   display: flex;
   flex-flow: column;
   align-items: center;
   background-size: contain;
+  overflow: hidden;
   padding: 2rem 0;
   font-family: sans-serif;
   line-height: 1;
