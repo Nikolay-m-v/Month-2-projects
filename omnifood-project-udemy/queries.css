@@ -1,0 +1,60 @@
+/* Below 1344px (smaller desktops) */
+
+@media (max-width: 84em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .testimonials-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Below 1200px (Landscape Tablets) */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .important-heading {
+    font-size: 3.6rem;
+  }
+
+  .important-info {
+    font-size: 2.4rem;
+  }
+}
+
+/* Below 1100px (some layout overflows) */
+
+@media (max-width: 70em) {
+  .container-featured-in {
+    gap: 2rem;
+  }
+
+  .hero-img {
+    min-width: 30rem;
+  }
+
+  .how-it-works .container {
+    gap: 0;
+  }
+
+  .custom-position {
+    left: 7%;
+  }
+
+  .custom {
+    max-width: 40rem;
+  }
+
+  .call-to-action {
+    max-width: 70rem;
+  }
+}
+
+/* Below 600px idk what under 600px even supports */
+
+@media (max-width: 38em) {
+}

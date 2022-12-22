@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body,
@@ -15,15 +15,19 @@ li {
 }
 
 body {
+}
+
+.page-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-size: contain;
+  padding: 2rem 0;
   font-family: sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
   background-color: #fdf2e9;
-}
-
-header {
-  margin-top: 2rem;
 }
 
 footer {
@@ -34,8 +38,11 @@ footer {
 }
 
 .top-page-section-container {
+  display: flex;
+  flex-flow: column;
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 4rem;
 }
 
 .logo-img {
@@ -58,14 +65,15 @@ footer {
 .header-navigation ul {
   display: flex;
   list-style: none;
-  font-size: 20px;
+  font-size: 1rem;
+  gap: 5px;
 }
 
 .header-navigation a {
   text-decoration: none;
   color: #000;
   font-weight: 600;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   border-radius: 8px;
   font-size: 1.8rem;
 }
@@ -85,18 +93,6 @@ footer {
 .section-hero {
   background-color: #fdf2e9;
   padding: 9.6rem 0;
-}
-
-@media (max-width: 1200px) {
-  .section-hero {
-    background-color: orangered;
-  }
-}
-
-@media (max-width: 600px) {
-  .section-hero {
-    border: 20px dashed blue;
-  }
 }
 
 .hero {
@@ -220,7 +216,7 @@ footer {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5rem;
+  padding: 5rem 0;
   position: relative;
 }
 
@@ -305,9 +301,6 @@ footer {
 
 .custom {
   margin-left: 25%;
-}
-
-.custom {
   text-align: end;
 }
 
@@ -317,6 +310,7 @@ footer {
 
 .how-it-works-info {
   max-width: 58rem;
+  z-index: 3;
 }
 
 .important {
@@ -351,7 +345,7 @@ footer {
   content: "";
   display: block;
   background-color: #fdf2e9;
-  left: -7rem;
+  left: -19rem;
   top: -5rem;
   padding-bottom: 20%;
   border-radius: 50%;
@@ -404,7 +398,7 @@ footer {
 .meals-container {
   margin-top: 5rem;
   display: flex;
-  gap: 8rem;
+  gap: 5rem;
 }
 
 .meals .important-heading {
@@ -581,7 +575,10 @@ footer {
 }
 
 .testimonials-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
   gap: 10rem;
   padding: 5rem 10rem;
 }
@@ -734,9 +731,10 @@ footer {
 }
 
 .features-container {
-  margin: 0 auto;
   display: flex;
   justify-content: center;
+  margin: 0 auto;
+  padding: 0 4rem;
   gap: 5rem;
 }
 
