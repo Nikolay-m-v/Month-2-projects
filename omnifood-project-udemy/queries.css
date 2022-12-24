@@ -52,6 +52,52 @@
 
 /* Under 944px tablets */
 @media (max-width: 940px) {
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .header-navigation {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .header-navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .hide-menu {
+    display: block;
+  }
+
+  .nav-open .show-menu {
+    display: none;
+  }
+  .header-navigation ul {
+    text-align: center;
+    flex-flow: column;
+    gap: 4.8rem;
+  }
+
+  .header-navigation a {
+    font-size: 3rem;
+  }
+
   .footer-container {
     gap: 0;
   }
@@ -120,11 +166,43 @@
   .testimonials-gallery img {
     max-width: 25rem;
   }
+
+  .container {
+    max-width: 60rem;
+  }
+
+  .custom-position {
+    left: -15%;
+  }
+
+  .custom {
+    margin-left: 20%;
+  }
+
+  .customm {
+    margin-left: 25%;
+  }
 }
 
 @media (max-width: 750px) {
-  .logo {
-    display: none;
+  .customm {
+    margin: 0;
+  }
+
+  .container-featured-in {
+    display: flex;
+    flex-flow: column;
+    gap: 8rem;
+  }
+
+  .custom-position {
+    margin: 0;
+    order: 2;
+    left: 0;
+  }
+
+  .taxes {
+    max-width: 50rem;
   }
 
   .pricing-container {
@@ -139,15 +217,18 @@
   }
 
   .container {
-    max-width: 60rem;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .custom-position {
-    left: 16%;
+  .how-it-works {
+    align-items: center;
+    justify-content: center;
   }
 
-  .custom {
-    margin-left: 50%;
+  .img-box img {
+    position: relative;
   }
 
   .testimonials-gallery {
@@ -171,7 +252,9 @@
   }
 
   .footer-container {
-    flex-flow: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
   }
 
   .footer-important {
@@ -193,5 +276,14 @@
 
   .testimonials-gallery .shown {
     display: block;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .custom {
+    left: 10%;
   }
 }
