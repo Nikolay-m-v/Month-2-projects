@@ -27,6 +27,7 @@ header {
   background-size: contain;
   overflow-x: hidden;
   font-family: sans-serif;
+
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -79,6 +80,23 @@ footer {
   padding: 1rem 1rem;
   border-radius: 8px;
   font-size: 1.8rem;
+}
+
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  padding: 0 4rem;
+
+  height: 6vh;
+  align-self: center;
+  justify-self: center;
+  z-index: 5;
+}
+
+.sticky .section-hero {
+  margin-top: 5.6rem;
 }
 
 .btn-mobile-nav {
@@ -237,7 +255,7 @@ footer {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0;
+  padding: 1rem 0;
   position: relative;
 }
 
